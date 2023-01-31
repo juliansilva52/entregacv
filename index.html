@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curriculum Vitae</title>
+    <script src="function.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+</head>
+<body>
+    <h1 id="cv">Curriculum Vitae</h1>
+    <img src="https://get.pxhere.com/photo/person-suit-profile-male-portrait-young-professional-profession-hairstyle-social-media-elegant-cv-businessperson-white-collar-worker-459413.jpg" width="300" alt="Foto de perfil">
+    <ul>
+        <li>&#9995 Nombre: Matt Vitorio Spezia.</li>
+        <li>&#127749 Fecha de nacimiento: 21/7/84.</li>
+        <li>&#10024 Lugar de nacimiento: Glasgow, Escocia.</li>
+        <li>&#9962 Domicilio: St. Andrews 2099.</li>
+        <li>&#127750 Localidad: Belfast.</li>
+        <li>&#127757 País: Irlanda.</li>
+        <li>&#9993 Correo electrónico: <a href="mailto:matt.spezia@gmail.com">mattspezia@gmail.com</a></li>
+        <li>&#9742 Número de contato: 3444 - 6459781</li>
+    </ul>
+    <h2>Perfil</h2>
+        <p>Cortés y entusiasta, estoy interesado en IT y todo en su órbita. Recientemente comencé a sentirme fascinado por la programación web, por ejemplo: desarrollando aplicaciones y construyendo sitios web. Invitado a unirme a una empresa emergente de mi amigo como desarrollador de aplicaciones para usuario, adquirí experiencia trabajando en esta área.
+            Como esta área complementa mis estudios, estoy ansioso por adquirir más experiencia en este campo. Por esta razón, estoy buscando una compañía dispuesta a ofrecerme una ubicación entre sus desarrolladores. A cambio, ofrecería mi todo compromiso y sería una adición agradable y amigable para su equipo.
+            Por lo tanto, actualmente estoy buscando un trabajo o una pasantía como un desarrollador front-end.</p>
+    <h3>Habilidades</h3>
+    <button id="boton" type="button" onclick="document.getElementById('mostrarMas').style.display='block'">Mostrar tabla de habilidades</button>
+    <table id="mostrarMas" style="display:none">
+        <tr>
+          <th>Habilidades de informática</th>
+          <th>Otras habilidades</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Gran oratoria</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Inglés nativo, alemán avanzado</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Curso completo de RRPP</td>
+          </tr>
+          <tr>
+            <td>Manejo de Excel</td>
+            <td>Gran capacidad de liderazgo de proyectos</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Trabajo en equipo</td>
+          </tr>
+          <tr>
+            <td>MySQL</td>
+            <td>Ganas de aprender</td>
+          </tr>
+      </table>
+  <h4>Experiencia</h4>
+    <p>2019 - Presente. <a href="https://www.cencosud.com/" target="_blank">Cencosud.</a> Gestión de requerimientos, nivelación de capacidad de equipo de trabajo interno, análisis de factibilidad, control del ciclo de desarrollo, go live, seguimiento de evolución de productos. Participo en grandes proyectos, utilizando metodologías ágiles y procesos de mejora continua. Actualmente me encuentro liderando proyectos de gran impacto con equipos locales y distribuidos geográficamente. </p>
+    <br> 
+    <br>
+  <h4>Ejemplo de eventos en botones</h4>
+        <button id="botonPrueba">Botón de prueba</button>
+        <p id="mymarker"></p>
+        <script>
+            var button = document.getElementById("botonPrueba");
+            var marker = document.getElementById("mymarker");
+            var click=0, mouseover=0, mouseleave=0, focus=0, blur=0;
+        
+            button.onclick = function(){
+                console.log(this.id+": Clicked!");
+                click++;
+                update_marker();
+            }
+        
+            button.onmouseover = function(){
+                console.log(this.id+": Mouse Over!");
+                mouseover++;
+                update_marker();
+            }
+        
+            button.onmouseleave = function(){
+                console.log(this.id+": Mouse Leave!");
+                mouseleave++;
+                update_marker();
+            }
+        
+            function update_marker(){
+                marker.innerHTML = "Clickeado: "+ click + " - ";
+                marker.innerHTML += "Puntero sobre el botón: "+ mouseover + " - ";
+                marker.innerHTML += "Puntero fuera del botón: "+ mouseleave;
+            }
+        </script>
+    <hr>
+    <footer>Este trabajo fue hecho por el alumno Julián Silva - juliansilva52@outlook.com <br>
+    Con HTML y CSS me va bien y aprendo rápido, pero con JS me cuesta más. No entiendo bien cómo 
+    llevar el código hacia el archivo function.js, por eso por ahora lo dejo en el index.html.
+    Todavía estoy aprendiendo sobre los eventos onclick, dejé un experimento en el final de la página, 
+    el botón de prueba. Quise hacer un botón para cambiar el color de fondo pero no pude. He de seguir aprendiendo.
+    Espero que este trabajo sea suficiente para aprobar. ¡Un saludo!.
+</footer>   
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.alert("Los datos de este CV son inventados, con el motivo de poder mostrar lo que fui aprendiendo durante el curso. Mucha de la información escrita en 'Perfil' y 'Habilidades' no tiene relación.");
